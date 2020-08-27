@@ -1,0 +1,13 @@
+{
+  "name": "django-sslcommerz",
+  "private": true,
+  "scripts": {
+    "install": "python -m pip install -r requirements.txt",
+    "manage.py": "python dev/manage.py",
+    "start": "python dev/manage.py runserver",
+    "test": "python dev/manage.py test",
+    "build": "python setup.py sdist bdist_wheel",
+    "deploy": "twine upload --repository testpypi dist/*",
+    "deploy:prod": "twine upload dist/*"
+  }
+}
